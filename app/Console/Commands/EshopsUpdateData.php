@@ -33,13 +33,13 @@ class EshopsUpdateData extends Command
      */
     public function handle()
     {
-        Log::info( 'The command "eshop-action:updateall" has been launched.' );
+        Log::info( 'The command "eshop-action:update" has been launched.' );
 
         $run = $this->eshopService->getDataFromAllEshops();
 
         Log::info( 'E-shops class: '. implode(' | ', $run['eshops_class']) );
         Log::info( 'E-shops: '. implode(' | ', $run['eshops']) );
-        Log::info( 'The command "eshop-action:updateall" has been successfully completed.' );
+        Log::info( 'The command "eshop-action:update" has been successfully completed.' );
 
         return 0;
     }
