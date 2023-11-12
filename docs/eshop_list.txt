@@ -1,0 +1,8 @@
+################
+## ESHOP list ##
+################
+
+Eshop1Hanlder - Fiktivny eshop
+Eshop2Hanlder - Neexistujuci eshop
+Eshop3Hanlder - NoName eshop
+Eshop4Hanlder - Bezmena eshop
