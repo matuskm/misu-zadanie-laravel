@@ -31,7 +31,7 @@ docker run --rm -w /home/node/app -v $PWD:/home/node/app node:16 npm run watch /
 ### Pridanie nového e-shop feed
 1. Vytvor v `App/Handlers/Eshop` súbor napr. `Eshop5Handler.php`
 2. Skopíruj ukážkový kód z priečinka `docs/EshopExampleHandler.php`. V priečinku `docs` nájdeš aj zoznam e-shopov - `eshop_list.txt`
-3. Uprav údaje o eshope v __construct
+3. Uprav údaje o eshope v `__construct`
 4. V metóde `parsheDataFromFeed()` uprav feed z eshopu tak aby vrátil pole produktov:
     ```
        'name'  => 'xyz',
