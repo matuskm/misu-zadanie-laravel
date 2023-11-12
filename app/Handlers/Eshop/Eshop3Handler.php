@@ -3,17 +3,13 @@
 namespace App\Handlers\Eshop;
 
 use App\Interfaces\EshopHandlerInterface;
-use App\Services\EshopService;
 
 class Eshop3Handler implements EshopHandlerInterface
 {
-    private $eshopService;
     private $eshop;
 
-    public function __construct(eshopService $eshopService)
-    {
-        $this->eshopService = $eshopService;
-
+    public function __construct()
+    {       
         /**
          * Variable parameters for current eshop. Please modify to your needs.
          */
@@ -22,7 +18,6 @@ class Eshop3Handler implements EshopHandlerInterface
             'url'   => 'https://noname-eshop.sk',
             'feed'  =>  public_path(). '/feeds/eshop_noname.json'
         ];
-
     }
 
     public function getData(): Array
